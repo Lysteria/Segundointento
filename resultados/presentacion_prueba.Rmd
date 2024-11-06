@@ -1,0 +1,65 @@
+---
+title: "Presentacion1"
+author: "Santiago Figueroa"
+date: "2024-11-06"
+output:
+  ioslides_presentation: default
+  beamer_presentation: default
+  slidy_presentation: default
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting
+syntax for authoring HTML, PDF, and MS Word documents. For more details
+on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that
+includes both content as well as the output of any embedded R code
+chunks within the document.
+
+## Slide with Bullets
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
+## Diapositiva de script
+
+```{r}
+compleja_lista <- list(
+  numero = 42,
+  vector = c(1, 2, 3),
+  matriz = matrix(c(1, 2, 3, 4), nrow = 2),
+  data_frame = data.frame(nombre = c("E. coli", "S. aureus"), gram = c("+", "-"))
+)
+
+print(compleja_lista)
+```
+
+## Diapositva de texto
+
+Hola, esto es una prueba
+
+## Imagen
+
+[blablablabla](https://www.google.com/search?q=que+es+un+neutrofilo&oq=que+es+un+neutrofilo+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAjIHCAIQIRiPAtIBCDM1OTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
